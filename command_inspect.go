@@ -16,6 +16,7 @@ func commandInspect(cfg *config, args ...string) error {
 		return fmt.Errorf("you have not caught a %s yet", name)
 	}
 
+	fmt.Println()
 	fmt.Printf("Name: %s\n", pokemon.Name)
 	fmt.Printf("Height: %d\n", pokemon.Height)
 	fmt.Printf("Weight: %d\n", pokemon.Weight)

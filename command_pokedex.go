@@ -10,6 +10,7 @@ func commandPokedex(cfg *config, args ...string) error {
 		return errors.New("your Pokedex is empty, go catch some Pokemon")
 	}
 
+	fmt.Println()
 	fmt.Println("Your Pokedex:")
 	for _, pokemon := range cfg.caughtPokemon {
 		fmt.Printf("  - %s\n", pokemon.Name)
